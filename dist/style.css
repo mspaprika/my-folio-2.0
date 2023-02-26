@@ -34,7 +34,7 @@ body .my-container .section-horizontal {
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   scroll-snap-align: end;
 }
 body .my-container .section-horizontal .section-wrapper {
@@ -44,7 +44,6 @@ body .my-container .section-horizontal .section-wrapper {
   padding-top: 100px;
   padding-bottom: 50px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 }

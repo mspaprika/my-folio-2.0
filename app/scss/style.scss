@@ -39,7 +39,7 @@ body {
             display: flex;
             justify-content: center;
             width: 100vw;
-            height: 100vh;
+            min-height: 100vh;
             scroll-snap-align: end;
 
             .section-wrapper {
@@ -49,7 +49,6 @@ body {
                 padding-top: 100px;
                 padding-bottom: 50px;
                 display: flex;
-                flex-wrap: wrap;
                 flex-direction: column;
                 align-items: center;
             }
@@ -131,4 +130,20 @@ body {
         }
     }
 }
- 
+
+// @media screen and (min-width: 280px) and (max-width: 767px) {
+    
+//     .my-container {
+        
+//         .section-horizontal {
+//             overflow-y: scroll !important;
+//             min-height: 100dvh;
+
+//             .section-wrapper {
+//                 overflow-y: scroll !important;
+//                 min-height: 100dvh !important;
+//             }
+//             }
+//         }
+//     }
+
