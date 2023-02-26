@@ -1,0 +1,90 @@
+@import "style";
+
+html {
+    background: #a62121;
+    width: 100vw;
+    min-height: 100svh;
+  
+  .vertical-container {
+    
+    -ms-overflow-style: none;  /*  hide  scrollbar // IE and Edge */
+    scrollbar-width: none;  /*   hide scrollbar // Firefox */
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: row;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;   
+
+    .my-nav {
+        @include nav-bar-style;
+    }     
+  
+    .section-vertical {
+        padding-top: 100px;
+        display: flex;   
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: center;
+  
+        .section-top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &:nth-of-type(1) {
+            background: #49b293;
+        }
+  
+        &:nth-of-type(2) {
+            background: #c94e4b;
+        }
+  
+        &:nth-of-type(3) {
+            background: #4cc1be;
+        }
+  
+        &:nth-of-type(4) {
+            background: #8360A6;
+        }
+
+        .top-arrow {
+            transform: rotate(-90deg);
+        }
+
+        .down-arrow {
+            transform: rotate(90deg);
+        }
+
+        .article {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+  
+    }
+    .vertical-container::-webkit-scrollbar {
+        display: none;
+    }   
+}
+}
+
+@media screen and (min-width: 280px) and (max-width: 1024px) {
+    
+    .vertical-container {
+        
+        .section-vertical {
+            overflow-y: scroll !important;
+            min-height: 100vh;
+        }
+    }
+}
