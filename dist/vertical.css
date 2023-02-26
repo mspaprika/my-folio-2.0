@@ -122,9 +122,14 @@ body .vertical-container {
   scrollbar-width: none; /*   hide scrollbar // Firefox */
 }
 body .vertical-container .my-nav {
+  position: absolute !important;
   width: 100vw;
   height: 60px;
   background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -142,8 +147,8 @@ body .vertical-container .section-vertical {
 }
 body .vertical-container .section-vertical .section-wrapper {
   width: 100%;
-  height: 100%;
-  padding-top: 50px;
+  height: 100vh;
+  padding-top: 70px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
