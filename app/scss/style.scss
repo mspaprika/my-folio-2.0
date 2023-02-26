@@ -1,7 +1,7 @@
 @mixin nav-bar-style {
         position: absolute !important;
         width: 100vw;
-        height: 70px;
+        height: 60px;
         background-color: rgb(255, 255, 255);
         position: sticky;
         top: 0;
@@ -18,7 +18,7 @@ body {
     min-height: 100vh;
     margin: 0;   
     background-color: darkorchid;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 
     .my-container {
         width: 100%;
