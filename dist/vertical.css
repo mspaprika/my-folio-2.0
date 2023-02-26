@@ -104,7 +104,7 @@ body .my-container .my-container::-webkit-scrollbar {
 html {
   background: #a62121;
   width: 100vw;
-  min-height: 100svh;
+  min-height: 100vh;
 }
 html .vertical-container {
   -ms-overflow-style: none; /*  hide  scrollbar // IE and Edge */

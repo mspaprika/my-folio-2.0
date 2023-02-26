@@ -15,7 +15,7 @@
 
 body {
     width: 100vw;
-    min-height: 100svh;
+    min-height: 100vh;
     margin: 0;   
     background-color: darkorchid;
 
@@ -39,7 +39,7 @@ body {
             display: flex;
             justify-content: center;
             width: 100vw;
-            min-height: 100svh;
+            min-height: 100vh;
             scroll-snap-align: end;
             scroll-snap-type: x mandatory;
 
