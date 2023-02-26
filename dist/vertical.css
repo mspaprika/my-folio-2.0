@@ -113,7 +113,7 @@ body {
 body .vertical-container {
   display: grid;
   grid-auto-flow: row;
-  height: 100dvh;
+  height: 100vh;
   width: 100vw;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
