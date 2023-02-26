@@ -3,6 +3,7 @@ body {
   min-height: 100vh;
   margin: 0;
   background-color: darkorchid;
+  overflow-x: hidden;
 }
 body .my-container {
   width: 100%;
@@ -33,9 +34,8 @@ body .my-container .section-horizontal {
   display: flex;
   justify-content: center;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   scroll-snap-align: end;
-  scroll-snap-type: x mandatory;
 }
 body .my-container .section-horizontal .section-wrapper {
   position: relative;

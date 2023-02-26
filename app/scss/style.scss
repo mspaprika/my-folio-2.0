@@ -18,20 +18,17 @@ body {
     min-height: 100vh;
     margin: 0;   
     background-color: darkorchid;
-    // overflow: hidden;
-
+    overflow-x: hidden;
 
     .my-container {
         width: 100%;
         height: 100%;
         background-color: aquamarine;
         overflow-x: scroll;
-        // overflow-y: hidden;
         display: flex;
         -ms-overflow-style: none;  /*  hide  scrollbar // IE and Edge */
         scrollbar-width: none;  /*   hide scrollbar // Firefox */
         scroll-snap-type: x mandatory;
-        // scroll-behavior: smooth; 
 
         .my-nav {
             @include nav-bar-style;
@@ -42,9 +39,8 @@ body {
             display: flex;
             justify-content: center;
             width: 100vw;
-            min-height: 100vh;
+            height: 100vh;
             scroll-snap-align: end;
-            scroll-snap-type: x mandatory;
 
             .section-wrapper {
                 position: relative;
