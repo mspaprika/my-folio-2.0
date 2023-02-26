@@ -105,6 +105,7 @@ body {
   background: #a62121;
   width: 100vw;
   min-height: 100vh;
+  margin: 0;
 }
 body .vertical-container {
   margin: 0 auto;
@@ -121,8 +122,12 @@ body .vertical-container {
 }
 body .vertical-container .my-nav {
   width: 100vw;
-  height: 70px;
+  height: 60px;
   background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 body .vertical-container .section-vertical {
   display: flex;
@@ -133,6 +138,16 @@ body .vertical-container .section-vertical {
   width: 100vw;
   min-height: 100vh;
   scroll-snap-align: center;
+}
+body .vertical-container .section-vertical .section-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 body .vertical-container .section-vertical .section-top {
   display: flex;
@@ -161,6 +176,11 @@ body .vertical-container .section-vertical .article {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+body .vertical-container .section-vertical h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
   text-align: center;
 }
 
