@@ -101,19 +101,17 @@ body .my-container .section-horizontal .left-arrow {
     display: none;
   }
 }
-html {
+body {
   background: #a62121;
   width: 100vw;
   min-height: 100vh;
-  overflow: hidden;
 }
-html .vertical-container {
+body .vertical-container {
   margin: 0 auto;
   display: grid;
   grid-auto-flow: row;
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
-  overflow-x: hidden;
   overflow-y: auto;
   overscroll-behavior-y: contain;
   scroll-snap-type: y mandatory;
@@ -121,22 +119,12 @@ html .vertical-container {
   -ms-overflow-style: none; /*  hide  scrollbar // IE and Edge */
   scrollbar-width: none; /*   hide scrollbar // Firefox */
 }
-html .vertical-container .my-nav {
-  position: absolute !important;
+body .vertical-container .my-nav {
   width: 100vw;
   height: 70px;
   background-color: rgb(255, 255, 255);
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
-html .vertical-container .section-vertical {
-  padding-top: 100px;
+body .vertical-container .section-vertical {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -146,30 +134,30 @@ html .vertical-container .section-vertical {
   min-height: 100vh;
   scroll-snap-align: center;
 }
-html .vertical-container .section-vertical .section-top {
+body .vertical-container .section-vertical .section-top {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-html .vertical-container .section-vertical:nth-of-type(1) {
+body .vertical-container .section-vertical:nth-of-type(1) {
   background: #49b293;
 }
-html .vertical-container .section-vertical:nth-of-type(2) {
+body .vertical-container .section-vertical:nth-of-type(2) {
   background: #c94e4b;
 }
-html .vertical-container .section-vertical:nth-of-type(3) {
+body .vertical-container .section-vertical:nth-of-type(3) {
   background: #4cc1be;
 }
-html .vertical-container .section-vertical:nth-of-type(4) {
+body .vertical-container .section-vertical:nth-of-type(4) {
   background: #8360A6;
 }
-html .vertical-container .section-vertical .top-arrow {
+body .vertical-container .section-vertical .top-arrow {
   transform: rotate(-90deg);
 }
-html .vertical-container .section-vertical .down-arrow {
+body .vertical-container .section-vertical .down-arrow {
   transform: rotate(90deg);
 }
-html .vertical-container .section-vertical .article {
+body .vertical-container .section-vertical .article {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,5 +172,24 @@ html .vertical-container .section-vertical .article {
   .vertical-container .section-vertical {
     overflow-y: scroll !important;
     min-height: 100vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-vertical {
+    padding-top: 100px;
+  }
+  .section-vertical .my-nav {
+    position: absolute !important;
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   }
 }/*# sourceMappingURL=vertical.css.map */
