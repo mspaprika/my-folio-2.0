@@ -5,20 +5,22 @@ html {
     width: 100vw;
     min-height: 100vh;
     overflow: hidden;
+    
   
     .vertical-container {
-        -ms-overflow-style: none;  /*  hide  scrollbar // IE and Edge */
-        scrollbar-width: none;  /*   hide scrollbar // Firefox */
+        
         margin: 0 auto;
         display: grid;
         grid-auto-flow: row;
         height: 100vh;
         width: 100vw;
-        overflow-y: auto;
         overflow-x: hidden;
+        overflow-y: auto;
         overscroll-behavior-y: contain;
         scroll-snap-type: y mandatory;
-        scroll-behavior: smooth;   
+        scroll-behavior: smooth; 
+        -ms-overflow-style: none;  /*  hide  scrollbar // IE and Edge */
+        scrollbar-width: none;  /*   hide scrollbar // Firefox */  
 
         .my-nav {
             @include nav-bar-style;
@@ -73,11 +75,14 @@ html {
         }
   
     }
-    .vertical-container::-webkit-scrollbar {
-        display: none;
-    }   
+
+        
 }
 }
+
+.vertical-container::-webkit-scrollbar {
+    display: none;
+}   
 
 @media screen and (min-width: 280px) and (max-width: 1024px) {
     
